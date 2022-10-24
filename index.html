@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,58 +8,38 @@
     <!-- hoja de estilos -->
     <link rel="stylesheet" href="./css/styles.css">
     <!-- título de página -->
-    <title>Título de la página</title>
+    <title>App propinas</title>
     <!-- ícono de pàgina -->
     <!-- fuentes -->
     <!-- javascript -->
+    <script src="js/main.js"></script>
 </head>
-<body>
-<div class="row">
-    <div class="column-1">
-        <p>1</p>
-    </div>
-</div>
-<div class="row">
-    <div class="column-2">
-        <p>2</p>
-    </div>
-    <div class="column-2">
-        <p>3</p>
-    </div>
-</div>
-<div class="row">
-    <div class="column-4">
-        <p>4</p>
-    </div>
-    <div class="column-4">
-        <p>5</p>
-    </div>
-    <div class="column-4">
-        <p>6</p>
-    </div>
-    <div class="column-4">
-        <p>7</p>
-    </div>
-</div>
-<div class="row">
-    <div class="column-2">
-        <p>8</p>
-    </div>
-    <div class="column-2">
-        <p>9</p>
-    </div>
-</div>
-<div class="row">
-    <div class="column-3">
-        <p>10</p>
-    </div>
-    <div class="column-3">
-        <p>11</p>
-    </div>
-    <div class="column-3">
-        <p>12</p>
-    </div>
-</div>
+
+<body class="flex">
+    <div class="row bordes">
+        <div class="column-1">
+            <h1>Calculador de propinas</h1>
+        </div>
+
+        <div class="row">
+            <div class="column-1">
+                <input type="number" name="" id="total" placeholder="total de la cuenta...">
+                <br>
+                <select name="" id="servicios">
+                <option value="0">0% pésimo</option>
+                <option value="0.15">15% bueno</option>
+                <option value="0.30">30% excelente</option>
+            </select>
+                <br>
+                <input type="number" name="" id="personas" placeholder="¿cuantas personas van a pagar la cuenta">
+                <br>
+                <input type="submit" value="calcular" onclick="calcProp()">
+                <h5 id="respuesta">Total a pagar</h5>
+            </div>
+        </div>
+
+
 
 </body>
+
 </html>
